@@ -43,7 +43,22 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: center; }
+
+.header__phone--wrapper {
+  display: flex;
+  align-items: center; }
+
+.header__name {
+  color: #ffffff;
+  font-size: 15px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  padding: 0 0 20px 40px;
+  background-image: url("../img/viber.svg"), url("../img/tele.svg"), url("../img/watsapp.svg");
+  background-position: left bottom, center bottom, right bottom;
+  background-repeat: no-repeat; }
 
 .header__text {
   margin-bottom: 0;
@@ -51,16 +66,20 @@ a {
   color: #ffffff; }
 
 .header__phone {
+  text-align: right;
   width: 170px;
   margin-bottom: 0;
   padding-left: 20px;
+  margin-bottom: 5px;
   font-weight: 500;
   font-size: 13px;
   color: #ffffff;
   text-decoration: none;
   background-image: url("../img/phone.svg");
   background-repeat: no-repeat;
-  background-position: left center; }
+  background-position: 45px center; }
+  .header__phone:last-child {
+    margin-bottom: 0; }
 
 @media screen and (max-width: 768px) {
   .header {
